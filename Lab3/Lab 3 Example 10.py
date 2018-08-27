@@ -7,5 +7,5 @@ def gcd_loop(a,b):
         a,b = b, a%b
     return b
 
-a=gcd_loop(5,101)
+a=gcd_loop(16,24)
 print(a)
