@@ -8,6 +8,9 @@ class Caeser(object):
         self._msg = msg
         self._key = key
 
+    def getDetails(self):
+        return "Details are as follows: %s | %s | %s"%(self._mode,self._msg,self._key)
+
     def checkMode(self):
         if self._mode not in 'encrypt e Encrypt E decrypt d Decrypt D'.split():
             print("Enter either encrypt or decrypt: ")
@@ -56,4 +59,5 @@ class Caeser(object):
 
 c = Caeser(mode, msg, key)
 print(c)
+print(c.getDetails())
 print(c.checkMode())
